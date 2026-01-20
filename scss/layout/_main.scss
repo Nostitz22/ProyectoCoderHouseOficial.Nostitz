@@ -48,7 +48,7 @@
     padding: 2rem 0;
     flex-wrap: wrap;
     text-align: center;
-    gap: 2rem;
+    gap: 5rem;
     height: auto;
     font-weight: 400;
     padding-left: 10% ;
@@ -56,7 +56,7 @@
 
 
     .index-destacados-btn{
-    background-color: rgb(228, 190, 146) ;
+    background-color: rgb(228, 190, 146);
     border: none;
     width: 50%;
     border-radius: 0.5rem;
@@ -78,4 +78,74 @@
     padding-top: 0.5rem;
 }
 
+}
+
+
+/*formulario de contacto main*/
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 3;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contactos-para-el-publico{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 4rem;
+    width: 100%;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    gap: 3rem;
+
+      .de-footer-title{
+        font-size: 1.5rem; 
+        font-weight: 600;
+        margin-bottom: 1rem;
+        width: 50%;
+      }
+
+          .formulario-contacto{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          }
+
+                .btn-enviar{
+                  background-color: rgb(228, 190, 146);
+                  border: none;
+                  width: 20%;
+                  border-radius: 0.5rem;
+                  padding: 0.5rem 0;
+                  gap: 6rem;
+                  display: inline-block; /*como se  muestra un elemento*/
+                  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); /*color del boton*/
+                  transition: all 0.3s ease; /*animacion de cambio de propiedades*/
+                  height: auto;
+                  transition: 0.2s ease; /*suaviza el efecto de escalado*/
+                  &:hover{
+                  transform: scale(1.05);
+                  }
+                  }
+                  
+                  .mapa-ubicacion{
+                    width: 100%;
+                    height: 300px;
+                    border: none;
+                    border-radius: 0.5rem;
+                  }
 }
