@@ -1,0 +1,11 @@
+%flexcolumncentradovertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+%flexJCcenterAIcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

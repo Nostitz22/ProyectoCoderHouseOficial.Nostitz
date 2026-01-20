@@ -1,0 +1,128 @@
+.index-header{
+    position: relative;
+    background-image: url(../../img/portada.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh; /* Altura de la imagen de fondo */
+}
+
+a{
+    text-decoration: none; /*elimino subrayados*/
+}
+
+
+h2{
+    font-size: 2.5rem; /*tamano de letra*/
+    font-weight: 700; /*espresor de letra*/
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.index-header-contenido{
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%);
+    left: 19rem;
+    max-width: 480px;
+    text-align: center;
+    align-items: center;
+    @extend %flexcolumncentradovertical;
+
+}
+
+body{
+    padding-top: 3rem; /* Espacio para la barra de navegación fija */
+}
+
+/*boton*/
+
+.boton{
+    background-color: rgb(228, 190, 146); /*cambia el color de fondo del elemento*/
+    color: aliceblue; /*cambia el color del texto */
+    padding: 0.8rem 2rem; /*espacio inferior entre el contenido y borde*/
+    border-radius: 10px; /*radio q le pone a las puntas del boton*/
+    @extend %flexcolumncentradovertical;
+    box-shadow: 0 6px 18px rgba(172, 87, 18, 0.35); /*color del boton*/
+    transition: 0.2s ease; /*suaviza el efecto de escalado*/
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+/* Tamaño del logotipo dentro de la navbar */
+.logotipo {
+    width: 3.5rem;
+}
+
+/*2. ----------NAV BAR --------------*/
+
+/* Link activo de la navbar
+   Uso !important para asegurar la prioridad de color y tipografía */
+.nav-link.active {
+    color: rgb(228, 190, 146);
+    font-size:  1.3rem !important;
+    font-weight: normal !important;
+;
+}
+
+/* Estilo personalizado de los enlaces */
+.navbar-nav a {
+    color: #020101;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+/* Efecto hover en texto*/
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(228, 190, 146);
+    transition: color 0.2s ease;
+}
+
+/* Botón “Hacé tu pedido” */
+.nav-pedido a {
+    background-color: rgb(228, 190, 146);
+    color: #ffffff !important;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.4rem 1rem;
+    box-shadow: 0 6px 18px rgba(210, 91, 75, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* Hover del botón */
+.nav-pedido a:hover {
+    background-color: rgb(228, 190, 146);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del menú hamburguesa */
+.navbar-toggler {
+    border: 2px solid rgb(228, 190, 146);
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image:  url(../../img/logo/logo.jpg);
+}
+
+.navbar-toggler[aria-expanded="true"] {
+    background-color:rgb(228, 190, 146);
+    border-color:rgb(228, 190, 146)rgb(228, 190, 146);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(210, 91, 75, 0.35);
+    border-color: #D25B4B;
+}

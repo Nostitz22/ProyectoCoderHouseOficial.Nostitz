@@ -1,0 +1,72 @@
+.index-footer-logos-todos{
+    @extend %flexJCcenterAIcenter;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+.footer-inferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f1ea;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a2f2a;
+    font-size: 14px;
+    padding-left: 0;
+    gap: 2rem ;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 15rem;
+
+/*navegacion footer*/
+.footer-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    color: #03030300;
+    text-decoration: none;
+
+}
+
+/*medios de pago footer*/
+.de-footer-col{
+    margin: 0 0 6px;
+    line-height: 1.4;
+    color: #3a2f2a;
+    text-decoration: none;
+
+    .de-footer-title {
+font-weight: 600;
+font-size: 20px;
+margin-bottom: 14px;
+
+}
+
+    .de-footer-payments img {
+height: 28px;
+margin-right: 10px;
+margin-top: 6px;
+}
+
+
+}
+
+
+}
+
+
+/*CONTACTO*/
+
+.footer-contacto{
+    @extend %flexcolumncentradovertical;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    .footer-contacto-iconos{
+        @extend %flexJCcenterAIcenter;
+        gap: 1rem;
+    }
+}

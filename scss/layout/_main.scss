@@ -1,0 +1,81 @@
+
+/*DESTACADOS MAIN*/
+
+.titulo-contenedor {
+  display: flex;       /* Alinea los elementos en fila */
+  align-items: center; /* Centra verticalmente el texto con las líneas */
+    text-align: center;
+  margin: 40px 0;      /* Espacio arriba y abajo de la sección */
+
+  // Línea de la izquierda
+    &::before {
+    content: "";
+    flex: 1;           /* Hace que la línea ocupe todo el espacio disponible */
+    height: 1px;
+    background: #ccc;  /* Color de la línea */
+    margin-right: 15px; /* Separación con el texto */
+    }
+
+  // Línea de la derecha
+    &::after {
+    content: "";
+    flex: 1;           /* Hace que la línea ocupe todo el espacio disponible */
+    height: 1px;
+    background: #ccc;
+    margin-left: 15px;  /* Separación con el texto */
+    }
+
+    .destacado-main {
+    font-size: 2.5rem;      /* Tamaño grande para el título */
+    font-weight: 600;       /* Grosor correcto (numérico, no rem) */
+    text-transform: uppercase;
+    color: #333;            /* Color del texto */
+    margin: 0;              /* Quitamos márgenes para no desalinear */
+    white-space: nowrap;    /* Evita que el texto salte de línea */
+    font-family: sans-serif; /* O la tipografía que estés usando */
+    }
+}
+
+
+
+/*productos destacados main*/
+
+.index-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+    align-items: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+    font-weight: 400;
+    padding-left: 10% ;
+    padding-right: 10%;
+
+
+    .index-destacados-btn{
+    background-color: rgb(228, 190, 146) ;
+    border: none;
+    width: 50%;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    display: inline-block; /*como se  muestra un elemento*/
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); /*color del boton*/
+    transition: all 0.3s ease; /*animacion de cambio de propiedades*/
+    height: auto;
+    transition: 0.2s ease; /*suaviza el efecto de escalado*/
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.postres-nombre{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+}

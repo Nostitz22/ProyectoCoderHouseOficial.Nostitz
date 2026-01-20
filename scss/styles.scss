@@ -1,0 +1,12 @@
+
+@import "./layout/header.scss";
+@import "./utilities/extends.scss";
+@import "./layout/main.scss";
+@import "./layout/footer.scss";
+
+
+* {
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    flex-wrap: wrap;
+}

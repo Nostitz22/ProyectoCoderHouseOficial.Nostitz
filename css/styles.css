@@ -1,0 +1,266 @@
+@charset "UTF-8";
+.index-header {
+  position: relative;
+  background-image: url(../../img/portada.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh; /* Altura de la imagen de fondo */
+}
+
+a {
+  text-decoration: none; /*elimino subrayados*/
+}
+
+h2 {
+  font-size: 2.5rem; /*tamano de letra*/
+  font-weight: 700; /*espresor de letra*/
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.index-header-contenido {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%);
+  left: 19rem;
+  max-width: 480px;
+  text-align: center;
+  align-items: center;
+}
+
+body {
+  padding-top: 3rem; /* Espacio para la barra de navegación fija */
+}
+
+/*boton*/
+.boton {
+  background-color: rgb(228, 190, 146); /*cambia el color de fondo del elemento*/
+  color: aliceblue; /*cambia el color del texto */
+  padding: 0.8rem 2rem; /*espacio inferior entre el contenido y borde*/
+  border-radius: 10px; /*radio q le pone a las puntas del boton*/
+  box-shadow: 0 6px 18px rgba(172, 87, 18, 0.35); /*color del boton*/
+  transition: 0.2s ease; /*suaviza el efecto de escalado*/
+}
+.boton:hover {
+  transform: scale(1.05);
+}
+
+/* Tamaño del logotipo dentro de la navbar */
+.logotipo {
+  width: 3.5rem;
+}
+
+/*2. ----------NAV BAR --------------*/
+/* Link activo de la navbar
+   Uso !important para asegurar la prioridad de color y tipografía */
+.nav-link.active {
+  color: rgb(228, 190, 146);
+  font-size: 1.3rem !important;
+  font-weight: normal !important;
+}
+
+/* Estilo personalizado de los enlaces */
+.navbar-nav a {
+  color: #020101;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+/* Efecto hover en texto*/
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(228, 190, 146);
+  transition: color 0.2s ease;
+}
+
+/* Botón “Hacé tu pedido” */
+.nav-pedido a {
+  background-color: rgb(228, 190, 146);
+  color: #ffffff !important;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 6px 18px rgba(210, 91, 75, 0.35);
+  transition: all 0.3s ease;
+}
+
+/* Hover del botón */
+.nav-pedido a:hover {
+  background-color: rgb(228, 190, 146);
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos del menú hamburguesa */
+.navbar-toggler {
+  border: 2px solid rgb(228, 190, 146);
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../../img/logo/logo.jpg);
+}
+
+.navbar-toggler[aria-expanded=true] {
+  background-color: rgb(228, 190, 146);
+  border-color: rgb(228, 190, 146) rgb(228, 190, 146);
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(210, 91, 75, 0.35);
+  border-color: #D25B4B;
+}
+
+.footer-contacto, .index-header-contenido, .boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-contacto .footer-contacto-iconos, .index-footer-logos-todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*DESTACADOS MAIN*/
+.titulo-contenedor {
+  display: flex; /* Alinea los elementos en fila */
+  align-items: center; /* Centra verticalmente el texto con las líneas */
+  text-align: center;
+  margin: 40px 0; /* Espacio arriba y abajo de la sección */
+}
+.titulo-contenedor::before {
+  content: "";
+  flex: 1; /* Hace que la línea ocupe todo el espacio disponible */
+  height: 1px;
+  background: #ccc; /* Color de la línea */
+  margin-right: 15px; /* Separación con el texto */
+}
+.titulo-contenedor::after {
+  content: "";
+  flex: 1; /* Hace que la línea ocupe todo el espacio disponible */
+  height: 1px;
+  background: #ccc;
+  margin-left: 15px; /* Separación con el texto */
+}
+.titulo-contenedor .destacado-main {
+  font-size: 2.5rem; /* Tamaño grande para el título */
+  font-weight: 600; /* Grosor correcto (numérico, no rem) */
+  text-transform: uppercase;
+  color: #333; /* Color del texto */
+  margin: 0; /* Quitamos márgenes para no desalinear */
+  white-space: nowrap; /* Evita que el texto salte de línea */
+  font-family: sans-serif; /* O la tipografía que estés usando */
+}
+
+/*productos destacados main*/
+.index-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: wrap;
+  align-items: center;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 2rem;
+  height: auto;
+  font-weight: 400;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.index-section .index-destacados-btn {
+  background-color: rgb(228, 190, 146);
+  border: none;
+  width: 50%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  display: inline-block; /*como se  muestra un elemento*/
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); /*color del boton*/
+  transition: all 0.3s ease; /*animacion de cambio de propiedades*/
+  height: auto;
+  transition: 0.2s ease; /*suaviza el efecto de escalado*/
+}
+.index-section .index-destacados-btn:hover {
+  transform: scale(1.05);
+}
+.index-section .postres-nombre {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.index-footer-logos-todos {
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f1ea;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3a2f2a;
+  font-size: 14px;
+  padding-left: 0;
+  gap: 2rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 15rem;
+  /*navegacion footer*/
+}
+.footer-inferior .footer-navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  text-decoration: none;
+  color: rgba(3, 3, 3, 0);
+  text-decoration: none;
+}
+.footer-inferior {
+  /*medios de pago footer*/
+}
+.footer-inferior .de-footer-col {
+  margin: 0 0 6px;
+  line-height: 1.4;
+  color: #3a2f2a;
+  text-decoration: none;
+}
+.footer-inferior .de-footer-col .de-footer-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.footer-inferior .de-footer-col .de-footer-payments img {
+  height: 28px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+/*CONTACTO*/
+.footer-contacto {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.footer-contacto .footer-contacto-iconos {
+  gap: 1rem;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=styles.css.map */
