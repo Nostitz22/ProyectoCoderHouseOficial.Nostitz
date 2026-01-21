@@ -40,10 +40,6 @@
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="../pages/destacados.html">Destacados</a>
                     </li>
-                    <li class="nav-pedido ms-4">
-                        <a class="nav-link"
-                            target="_blank">Ver pedido</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -125,7 +121,57 @@
 
     </footer>
 
+</div>
+
+    <!--CARRITO-->
+
+<div class="cart-tienda">
+
+
+
+<!-- Toggle carrito -->
+
+<input type="checkbox" id="toggle-cart" hidden>
+
+<!-- Botón carrito -->
+<label for="toggle-cart" class="cart-btn">
+    🛒 Carrito (3)
+</label>
+
+<!-- Isla del carrito -->
+<div class="cart-isla">
+    <h3>Carrito</h3>
+
+    <div class="cart-item">
+        <span>Torta Chocolate</span>
+        <span>$8.500</span>
+    </div>
+
+    <div class="cart-item">
+        <span>Cheesecake</span>
+        <span>$9.200</span>
+    </div>
+
+    <div class="cart-item">
+        <span>Lemon Pie</span>
+        <span>$7.000</span>
+    </div>
+
+    <hr>
+
+    <p class="cart-total">
+        Total: <strong>$24.700</strong>
+    </p>
+
+    <button class="cart-checkout">
+        Finalizar compra
+    </button>
+
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
