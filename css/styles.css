@@ -294,6 +294,32 @@ body {
   background-color: #f6f1ea;
 }
 
+/*----------REMBOLSOS MAIN -------------*/
+.reembolso-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  padding-left: 3rem;
+  width: 100%;
+  margin: 0 4rem 3rem 0;
+  gap: 1rem;
+  background-color: #f6f1ea;
+}
+.reembolso-contenedor .reembolso-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.reembolso-contenedor .reembolso-parrafo {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #000000;
+}
+
 .index-footer-logos-todos {
   gap: 4rem;
   margin-bottom: 2rem;
