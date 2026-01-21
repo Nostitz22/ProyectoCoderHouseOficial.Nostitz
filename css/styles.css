@@ -286,6 +286,14 @@ body {
   color: #555;
 }
 
+.container-contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  background-color: #f6f1ea;
+}
+
 .index-footer-logos-todos {
   gap: 4rem;
   margin-bottom: 2rem;
@@ -294,17 +302,15 @@ body {
 .footer-inferior {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: #f6f1ea;
   font-family: Arial, Helvetica, sans-serif;
   color: #3a2f2a;
   font-size: 14px;
-  padding-left: 0;
-  gap: 2rem;
-  padding-left: 20%;
-  padding-right: 20%;
-  height: 15rem;
+  padding: 3rem 9rem;
   width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
   /*navegacion footer*/
 }
 .footer-inferior .footer-navegacion {
@@ -312,9 +318,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+}
+.footer-inferior .footer-navegacion a {
   text-decoration: none;
-  color: rgba(3, 3, 3, 0);
-  text-decoration: none;
+  color: #3a2f2a;
+}
+.footer-inferior .footer-navegacion a:hover {
+  text-decoration: underline;
 }
 .footer-inferior {
   /*medios de pago footer*/

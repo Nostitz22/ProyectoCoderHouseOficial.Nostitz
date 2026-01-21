@@ -8,17 +8,15 @@
 .footer-inferior{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #f6f1ea;
     font-family: Arial, Helvetica, sans-serif;
     color: #3a2f2a;
     font-size: 14px;
-    padding-left: 0;
-    gap: 2rem ;
-    padding-left: 20%;
-    padding-right: 20%;
-    height: 15rem;
+    padding: 3rem 9rem;
     width: 100%;
+    margin: 0 auto;
+    gap: 2rem;
 
 /*navegacion footer*/
 .footer-navegacion {
@@ -26,9 +24,15 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    text-decoration: none;
-    color: #03030300;
-    text-decoration: none;
+
+    a{
+        text-decoration: none;
+        color: #3a2f2a;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
 
 }
 
