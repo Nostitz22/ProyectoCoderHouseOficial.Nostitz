@@ -1,0 +1,104 @@
+.tienda {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* sidebar */
+.sidebar {
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover  {
+    color: rgb(228, 190, 146);
+}
+
+/* productos */
+.productos h2 {
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* cards */
+.producto-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.producto-card:hover img {
+    transform: scale(1.08);
+}
+
+.producto-card h3 {
+    margin: 15px 0 10px 0;
+}
+@media (max-width: 768px) {
+    .tienda {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.sidebar-filtros {
+    margin-top: 30px;
+}
+
+.checkbox   {
+    margin-bottom: 15px;
+    border: 2rem;
+
+    .checkbox-color:hover {
+        cursor: pointer;
+        color : rgb(228, 190, 146)
+    }
+}
+
