@@ -24,15 +24,32 @@ h3{
 
 .index-header-contenido{
     position: absolute;
-    top: 30%;
-    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     left: 19rem;
+    width: 90%;
     max-width: 480px;
     text-align: center;
     align-items: center;
     @extend %flexcolumncentradovertical;
 
+    @media (max-width: 768px) {
+    .index-header {
+        height: 80vh;
+    }
+
+    .index-header-titulo {
+        font-size: 1.5rem;
+    }
+
+    .index-header-parrafo {
+        font-size: 0.9rem;
+    }
 }
+}
+
+
 
 body{
     padding-top: 3rem; /* Espacio para la barra de navegación fija */
@@ -41,7 +58,7 @@ body{
 /*boton*/
 
 .boton{
-    background-color: rgb(228, 190, 146); /*cambia el color de fondo del elemento*/
+    background-color: $color-principal; /*cambia el color de fondo del elemento*/
     color: aliceblue; /*cambia el color del texto */
     padding: 0.8rem 2rem; /*espacio inferior entre el contenido y borde*/
     border-radius: 10px; /*radio q le pone a las puntas del boton*/
@@ -64,7 +81,7 @@ body{
 /* Link activo de la navbar
    Uso !important para asegurar la prioridad de color y tipografía */
 .nav-link.active {
-    color: rgb(228, 190, 146);
+    color: $color-principal;
     font-size:  1.3rem !important;
     font-weight: normal !important;
 ;
@@ -79,13 +96,13 @@ body{
 
 /* Efecto hover en texto*/
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(228, 190, 146);
+    color: $color-principal;
     transition: color 0.2s ease;
 }
 
 /* Botón “Hacé tu pedido” */
 .nav-pedido a {
-    background-color: rgb(228, 190, 146);
+    background-color: $color-principal;
     color: #ffffff !important;
     font-size: 1.125rem;
     font-weight: 500;
@@ -97,13 +114,13 @@ body{
 
 /* Hover del botón */
 .nav-pedido a:hover {
-    background-color: rgb(228, 190, 146);
+    background-color: $color-principal;
     transition: background-color 0.3s ease;
 }
 
 /* Estilos del menú hamburguesa */
 .navbar-toggler {
-    border: 2px solid rgb(228, 190, 146);
+    border: 2px solid $color-principal;
     background-color: transparent;
 }
 
@@ -112,8 +129,8 @@ body{
 }
 
 .navbar-toggler[aria-expanded="true"] {
-    background-color:rgb(228, 190, 146);
-    border-color:rgb(228, 190, 146)rgb(228, 190, 146);
+    background-color:$color-principa;
+    border-color:$color-principal $color-principal;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {

@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(228, 190, 146);
+    background-color: $color-principal;
     color: #fff;
     padding: 0.8rem 1.2rem;
     border-radius: 30px;
@@ -10,6 +10,13 @@
     font-size: 14px;
     z-index: 1000;
 }
+
+.index-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
 
 .cart-isla {
     position: fixed;
@@ -36,7 +43,7 @@
 .cart-isla h3 {
     margin: 0 0 1rem;
     font-size: 18px;
-    color: rgb(228, 190, 146);
+    color: $color-principal;
 
 }
 .cart-item {
@@ -58,7 +65,7 @@
     padding: 0.6rem;
     border: none;
     border-radius: 10px;
-    background-color: rgb(228, 190, 146);
+    background-color: $color-principal;
     color: #fff;
     cursor: pointer;
 }

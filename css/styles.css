@@ -353,9 +353,7 @@ body {
 .footer-inferior .footer-navegacion a:hover {
   text-decoration: underline;
 }
-.footer-inferior {
-  /*medios de pago footer*/
-}
+
 .footer-inferior .de-footer-col {
   margin: 0 0 6px;
   line-height: 1.4;

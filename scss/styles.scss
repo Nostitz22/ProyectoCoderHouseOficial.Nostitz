@@ -5,9 +5,9 @@
 @import "./layout/footer.scss";
 @import "./layout/carrito.scss";
 @import "./layout/sidebar.scss";
+@import "./layout/variables.scss";
 
-
-* {
+* { 
     font-family: "Oswald", sans-serif;
     list-style: none;
     flex-wrap: wrap;
