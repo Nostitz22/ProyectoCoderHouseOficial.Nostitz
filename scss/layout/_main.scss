@@ -1,5 +1,7 @@
 
+@use"variables";
 /*DESTACADOS MAIN*/
+
 
 .titulo-contenedor {
   display: flex;       /* Alinea los elementos en fila */
@@ -89,7 +91,7 @@
 
 }
     .index-destacados-btn{
-    background-color: rgb(228, 190, 146);
+    background-color: $color-principal;
     border: none;
     width: 50%;
     border-radius: 0.5rem;
@@ -174,7 +176,7 @@
           }
 
                 .btn-enviar{
-                  background-color: rgb(228, 190, 146);
+                  background-color: $color-principal;
                   border: none;
                   width: 20%;
                   border-radius: 0.5rem;
